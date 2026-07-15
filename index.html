@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="theme-color" content="#14B8A6" />
     <title>Repaso</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+  html,body{margin:0;padding:0;background:#EEF6F2;-webkit-tap-highlight-color:transparent;}
+  *{box-sizing:border-box;}
+  .flex{display:flex;} .grid{display:grid;} .items-center{align-items:center;} .items-end{align-items:flex-end;}
+  .items-start{align-items:flex-start;} .justify-between{justify-content:space-between;} .justify-center{justify-content:center;}
+  .flex-wrap{flex-wrap:wrap;} .gap-1{gap:4px;} .gap-2{gap:8px;} .gap-3{gap:12px;}
+  .flex-col{flex-direction:column;} .gap-4{gap:16px;} .justify-end{justify-content:flex-end;}
+  .card3d{transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,.2,.2,1);}
+  .card3d.flip{transform:rotateY(180deg);}
+  .face{backface-visibility:hidden;-webkit-backface-visibility:hidden;}
+  .back{transform:rotateY(180deg);}
+  .pop{animation:pop .3s ease;} @keyframes pop{0%{transform:scale(.96)}60%{transform:scale(1.02)}100%{transform:scale(1)}}
+  .rise{animation:rise .35s ease both;} @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .heat::-webkit-scrollbar{height:7px;} .heat::-webkit-scrollbar-thumb{background:#DCEAE3;border-radius:4px;}
+  input[type=range]{accent-color:#14B8A6;} button{font-family:inherit;cursor:pointer;}
+  @media (prefers-reduced-motion: reduce){.card3d,.pop,.rise{transition:none;animation:none;}}
+  [contenteditable]{outline:none;} [contenteditable]:empty:before{content:attr(data-ph);color:#9DB0A8;}
+  .rich img{max-width:100%;height:auto;border-radius:8px;margin:4px 0;}
+  .rich table{border-collapse:collapse;margin:6px auto;font-size:14px;}
+  .rich td,.rich th{border:1px solid #C4D6CD;padding:5px 8px;min-width:34px;}
+  .rich ul,.rich ol{margin:6px 0;padding-left:22px;text-align:left;} .rich p{margin:4px 0;}
+  .occ-wrap{position:relative;display:inline-block;max-width:100%;touch-action:none;user-select:none;-webkit-user-select:none;}
+  .occ-wrap img{display:block;max-width:100%;height:auto;border-radius:10px;}
+  .occ-mask{position:absolute;box-sizing:border-box;}
+    </style>
   </head>
   <body>
     <div id="root"></div>
